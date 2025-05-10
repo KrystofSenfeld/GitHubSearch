@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace GitHubSearch.Models.JSON.Users {
     public class UserResponseModel {
@@ -7,10 +7,10 @@ namespace GitHubSearch.Models.JSON.Users {
 
         public string Url { get; set; }
 
-        [JsonPropertyName("avatar_url")]
+        [JsonProperty("avatar_url")]
         public string AvatarUrl { get; set; }
 
-        [JsonPropertyName("repos_url")]
+        [JsonProperty("repos_url")]
         public string ReposUrl { get; set; }
     }
 }

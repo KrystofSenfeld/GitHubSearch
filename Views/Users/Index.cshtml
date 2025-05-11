@@ -4,13 +4,15 @@
     ViewBag.Title = "Users";
 }
 
-<main>
-    <div class="row">
-        @using (Html.BeginForm("Search", "Users", FormMethod.Post)) {
-            @Html.TextBoxFor(m => m.Username, new { placeholder = "username" })
-            @Html.ValidationMessageFor(m => m.Username, string.Empty, new { @class = "text-danger" })
+<main class="d-flex flex-column justify-content-center align-items-center h-100">
+    <h3 class="display-3">Search GitHub Users</h3>
 
-            <input type="submit" />
-        }
-    </div>
+    @using (Html.BeginForm("Search", "Users", FormMethod.Post)) {
+        <div class="input-group input-group-lg search-input">
+            @Html.TextBoxFor(m => m.Username, new { placeholder = "Username", @class = "form-control" })
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        @Html.ValidationMessageFor(m => m.Username, string.Empty, new { @class = "text-danger" })
+    }
 </main>

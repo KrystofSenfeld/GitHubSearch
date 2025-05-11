@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@model GitHubSearch.Models.ViewModelBase
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - GitHub Search</title>
+    <title>@Model.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script src="https://kit.fontawesome.com/ec1a2bde09.js" crossorigin="anonymous"></script>

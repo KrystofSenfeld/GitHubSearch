@@ -1,4 +1,4 @@
-﻿@model GitHubSearch.Models.Users.UserModel
+﻿@model GitHubSearch.Models.Users.UserSearchResultViewModel
 
 @{
     ViewBag.Title = "Search Result";
@@ -15,12 +15,12 @@
     <div class="alert alert-secondary" role="alert">
         <div class="d-flex flex-row">
             <div class="me-3">
-                <img src="@Model.AvatarUrl" class="img-thumbnail" height="150" width="150" />
+                <img src="@Model.User.AvatarUrl" class="img-thumbnail" height="150" width="150" />
             </div>
 
             <div>
-                <h1><a href="@Model.Url" class="alert-link">@Model.Name</a></h1>
-                @Html.DisplayFor(m => m.Location)
+                <h1><a href="@Model.User.Url" class="alert-link">@Model.User.Username</a></h1>
+                @Html.DisplayFor(m => m.User.Location)
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
                 </thead>
 
                 <tbody>
-                    @foreach (var repo in Model.Repos) {
+                    @foreach (var repo in Model.User.Repos) {
                         <text>
                             <tr>
                                 <th scope="row"><a href="@repo.Url">@repo.Name</a></th>

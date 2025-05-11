@@ -1,0 +1,12 @@
+﻿@model GitHubSearch.Models.DTO.UserSearchDto
+
+@using (Html.BeginForm("Search", "Users", FormMethod.Post)) {
+    <div class="input-group input-group-lg search-input">
+        <input type="text" class="form-control" placeholder="Username"
+               name="@Html.NameFor(m => m.Username)" value="@Html.ValueFor(m => m.Username)" />
+
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    @Html.ValidationMessageFor(m => m.Username, string.Empty, new { @class = "text-danger" })
+}

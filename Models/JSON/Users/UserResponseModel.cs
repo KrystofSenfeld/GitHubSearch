@@ -2,7 +2,8 @@
 
 namespace GitHubSearch.Models.JSON.Users {
     public class UserResponseModel {
-        public string Name { get; set; }
+        [JsonProperty("login")]
+        public string Username { get; set; }
         public string Location { get; set; }
 
         [JsonProperty("html_url")]

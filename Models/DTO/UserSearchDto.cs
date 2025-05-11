@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GitHubSearch.Models.Users {
-    public class UserSearchModel {
+namespace GitHubSearch.Models.DTO {
+    public class UserSearchDto {
         [Required(ErrorMessage = "Please provide a username.")]
         public string Username { get; set; }
     }

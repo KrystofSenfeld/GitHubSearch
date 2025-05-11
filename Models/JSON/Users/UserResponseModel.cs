@@ -5,6 +5,7 @@ namespace GitHubSearch.Models.JSON.Users {
         public string Name { get; set; }
         public string Location { get; set; }
 
+        [JsonProperty("html_url")]
         public string Url { get; set; }
 
         [JsonProperty("avatar_url")]

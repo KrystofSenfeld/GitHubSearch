@@ -7,5 +7,7 @@ namespace GitHubSearch.Models.Users {
         public string Url { get; set; }
         public string AvatarUrl { get; set; }
         public List<UserRepoModel> Repos { get; set; }
+
+        public bool HasRepos => Repos != null && Repos.Count > 0;
     }
 }

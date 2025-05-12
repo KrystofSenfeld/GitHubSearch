@@ -9,7 +9,7 @@ using System.Web.Mvc;
 namespace GitHubSearch.Controllers {
     public class UsersController : Controller {
         [LoadTempModelState]
-        public ActionResult Index(string searchError) {
+        public ActionResult Index(string searchError = null) {
             var viewModel = new IndexViewModel {
                 Title = "User Search",
                 Error = searchError,
@@ -26,10 +26,10 @@ namespace GitHubSearch.Controllers {
                 return RedirectToAction("Index");
             }
 
-            return RedirectToAction("UserSearchResult", model);
+            return RedirectToAction("SearchResult", model);
         }
 
-        public async Task<ActionResult> UserSearchResult(UserSearchDto model) {
+        public async Task<ActionResult> SearchResult(UserSearchDto model) {
             if (model == null || string.IsNullOrEmpty(model.Username)) {
                 return RedirectToAction("Index");
             }

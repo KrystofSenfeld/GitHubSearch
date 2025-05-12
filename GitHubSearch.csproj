@@ -219,7 +219,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
-    <Content Include="Views\Users\UserSearchResult.cshtml" />
+    <Content Include="Views\Users\SearchResult.cshtml" />
     <Content Include="Views\Users\_UserSearch.cshtml" />
   </ItemGroup>
   <ItemGroup>

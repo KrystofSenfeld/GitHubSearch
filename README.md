@@ -11,6 +11,6 @@ Ensure that the following are installed:
 - [.NET Framework 4.8.1 Developer Pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net481)
 
 ## TODO
-- Refactor business logic out of controllers, perhaps into a separate class library.
+- Refactor business logic out of controllers, perhaps into a separate class library. This would also allow more granular unit tests.
 - Check if there is a better way to use HttpClient -- IHttpClientFactory unavailable?
 - Rather than using the CDN, it would be better to use the source files so that we can better customize and compile any desired changes.

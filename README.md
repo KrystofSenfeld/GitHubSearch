@@ -6,6 +6,7 @@ The site can be accessed here: https://githubsearchdemo.azurewebsites.net/.
 
 ## Setup
 The code can be checked out by cloning the repository in Visual Studio.
+If there are any issues running the project, try clean and rebuild.
 
 Ensure that the following are installed:
 - [.NET Framework 4.8.1 Developer Pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net481)

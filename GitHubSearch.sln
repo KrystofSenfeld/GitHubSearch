@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubSearch", "GitHubSearch.csproj", "{F1D451F8-2897-46C5-931E-1219CB213289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubSearch.Tests", "..\GitHubSearch.Tests\GitHubSearch.Tests.csproj", "{0EC5B4B2-F452-4632-8132-7B7FAE8AF58E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{4031406C-07E4-4B1F-A56C-862694BCF069}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F1D451F8-2897-46C5-931E-1219CB213289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1D451F8-2897-46C5-931E-1219CB213289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1D451F8-2897-46C5-931E-1219CB213289}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EC5B4B2-F452-4632-8132-7B7FAE8AF58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EC5B4B2-F452-4632-8132-7B7FAE8AF58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EC5B4B2-F452-4632-8132-7B7FAE8AF58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EC5B4B2-F452-4632-8132-7B7FAE8AF58E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4031406C-07E4-4B1F-A56C-862694BCF069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4031406C-07E4-4B1F-A56C-862694BCF069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4031406C-07E4-4B1F-A56C-862694BCF069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4031406C-07E4-4B1F-A56C-862694BCF069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
